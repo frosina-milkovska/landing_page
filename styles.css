@@ -45,12 +45,11 @@ img {
     position: relative;
     display: flex;
     align-items: stretch;
-    min-height: 600px;
+    height: 100vh;
 }
 
 .navbar {
     position: absolute;
-    top: 40px;
     left: 40px;
     right: 80px;
     z-index: 10;
@@ -98,17 +97,14 @@ img {
     letter-spacing: -0.02em;
     color: #1C1A19;
     margin-bottom: 24px;
-
-    max-width: 90%;
+    max-width: 80%;
 }
 
 .hero-text p {
-    max-width: 460px;
     font-size: 20px;
     line-height: 1.5;
     color: #55514D;
-    margin-bottom: 40px;
-
+    margin-bottom: 20px;
     max-width: 80%;
 }
 
@@ -130,7 +126,8 @@ img {
     text-transform: uppercase;
     letter-spacing: 0.08em;
 
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
 }
 
 .button:hover {
@@ -139,7 +136,6 @@ img {
 
 .hero-image {
     width: 60%;
-    height: 720px;
     object-fit: cover;
 }
 
@@ -148,8 +144,7 @@ img {
 }
 
 .section-header {
-    max-width: 1280px;
-    margin: 0 auto 40px;
+    margin: 40px 0;
 }
 
 .section-label {
@@ -162,7 +157,6 @@ img {
 }
 
 .section-header h2 {
-    font-family: "Cormorant Garamond", serif;
     font-size: 42px;
     font-weight: 500;
     line-height: 1.1;
@@ -170,7 +164,7 @@ img {
 
 .cards {
     max-width: 1280px;
-    margin: 0 auto;
+    margin: 60px auto;
     display: flex;
     gap: 16px;
 }
@@ -194,7 +188,6 @@ img {
 }
 
 .card h3 {
-    font-family: "Cormorant Garamond", serif;
     font-size: 28px;
     font-weight: 500;
     line-height: 1;
@@ -205,4 +198,95 @@ img {
     font-size: 16px;
     line-height: 1.5;
     color: #1C1A19;
+}
+
+.quote {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+    background-color: #201C1A;
+}
+
+.quote-mark {
+    flex: 1;
+}
+
+.quote-text {
+    flex: 3;
+    max-width: 700px;
+}
+
+.quote-author {
+    flex: 2;
+    display: flex;
+}
+
+.quote p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 120px;
+    line-height: 0.6;
+    color: #B22F66;
+}
+
+blockquote {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #FAF9F7;
+    max-width: 800px;
+}
+
+cite {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #B22F66;
+    align-self: flex-end;
+
+}
+
+.contact-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 80px;
+    padding: 56px 72px;
+    border: 3px solid #B22F66;
+    border-radius: 10px;
+}
+
+.contact-cta h2 {
+    font-size: 44px;
+    line-height: 1.05;
+}
+
+.contact-cta p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1C1A19;
+}
+
+.contact-cta .button {
+    margin: 0;
+}
+
+footer {
+    background-color: #1C1A19;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #B22F66;
 }
