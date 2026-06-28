@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #E8E5E1;
+    color: #1C1A19;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+.logo {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* HERO */
+
+.hero {
+    background-color: #E8E5E1;
+}
+
+.hero-content {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    min-height: 600px;
+}
+
+.navbar {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 80px;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 40px;
+    letter-spacing: 0.08em;
+    color: #982654;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    gap: 100px;
+}
+
+.nav-links a {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: #FAF9F7;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    color: #B22F66;
+}
+
+.hero-text {
+    width: 40%;
+    padding: 140px 40px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    color: #1C1A19;
+    margin-bottom: 24px;
+
+    max-width: 90%;
+}
+
+.hero-text p {
+    max-width: 460px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #55514D;
+    margin-bottom: 40px;
+
+    max-width: 80%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+    min-width: 220px;
+    height: 54px;
+    padding: 0 32px;
+
+    background-color: #B22F66;
+    color: #FAF9F7;
+
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.14);
+}
+
+.button:hover {
+    background-color: #982654;
+}
+
+.hero-image {
+    width: 60%;
+    height: 720px;
+    object-fit: cover;
+}
+
+.services {
+    padding: 40px 90px;
+}
+
+.section-header {
+    max-width: 1280px;
+    margin: 0 auto 40px;
+}
+
+.section-label {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #B22F66;
+    margin-bottom: 12px;
+}
+
+.section-header h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.cards {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    gap: 16px;
+}
+
+.card {
+    flex: 1;
+    min-height: 230px;
+    padding: 28px 30px;
+    border-left: 1px solid #D8D2CB;
+}
+
+.card:first-child {
+    border-left: 0;
+}
+
+.card img {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 28px;
+    outline: #982654;
+}
+
+.card h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1C1A19;
+}
